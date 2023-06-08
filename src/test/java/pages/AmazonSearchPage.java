@@ -44,4 +44,8 @@ public class AmazonSearchPage extends BasePage{
         clickElement(addToCartButton);
     }
 
+    public String addedToCartMessage() {
+        return textFromElement(addedMessageText);
+    }
+
 }
