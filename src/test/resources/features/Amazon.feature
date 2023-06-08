@@ -9,6 +9,7 @@ Feature: Test Amazon search functionality
     And selects the third item
     Then the user is able to add it to the cart
 
+  # Table of Examples
     Examples:
     |Product  |
     |Alexa    |
