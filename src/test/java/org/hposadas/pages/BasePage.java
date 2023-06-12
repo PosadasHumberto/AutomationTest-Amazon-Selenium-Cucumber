@@ -1,4 +1,4 @@
-package pages;
+package org.hposadas.pages;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class BasePage {
     protected static WebDriver driver;  //driver se declara como protected static para permitir que sea accesible desde otras clases que hereden de la clase actual.
@@ -23,6 +24,10 @@ public class BasePage {
     public BasePage(WebDriver driver) {
         BasePage.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    }
+
+    public static WebDriver getDriver() {
+        return driver;
     }
 
     //métodos generales
@@ -59,6 +64,11 @@ public class BasePage {
 
     public String textFromElement(String locator){
         return find(locator).getText();
+    }
+
+    public void selectNthElementFromList(String locator, int index) {
+        List<WebElement> elements = driver.findElements(By.xpath(locator));
+        elements.get(index).click();
     }
 
 }

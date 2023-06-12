@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49513c61-a0b7-4b2a-b298-07bb0f546a68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/hposadas/runner/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AmazonSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AmazonSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Amazon.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Amazon.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AmazonSearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/hposadas/pages/AmazonSearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/hposadas/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runner/Runner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AmazonSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/hposadas/steps/AmazonSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Amazon.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Amazon.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,16 +44,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.Runner">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Formaciones\Udemy\Selenium con Java y Cucumber\Projects\AmazonAutomation\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Runner (1)">
     <configuration name="Scenario: As a Customer when i search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Amazon.feature" />
@@ -68,16 +79,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in AmazonAutomation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AmazonAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AmazonAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.hposadas.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.hposadas.runner" />
+      <option name="MAIN_CLASS_NAME" value="org.hposadas.runner.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AmazonAutomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runner.*" />
+          <option name="PATTERN" value="org.hposadas.steps.runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="runner" />
-      <option name="MAIN_CLASS_NAME" value="runner.Runner" />
+      <option name="MAIN_CLASS_NAME" value="org.hposadas.steps.runner.Runner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,7 +119,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Runner (1)" />
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="JUnit.All in AmazonAutomation" />
         <item itemvalue="Cucumber Java.Scenario: As a Customer when i search for Alexa, I want to see if the third option on the second page is available for purchase and can be added to the cart" />
       </list>
     </recent_temporary>
@@ -98,7 +134,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686211689511</updated>
-      <workItem from="1686211695542" duration="9063000" />
+      <workItem from="1686211695542" duration="22471000" />
+      <workItem from="1686317086529" duration="12511000" />
+      <workItem from="1686391715727" duration="1005000" />
+      <workItem from="1686404655527" duration="8034000" />
+      <workItem from="1686577111974" duration="650000" />
     </task>
     <servers />
   </component>

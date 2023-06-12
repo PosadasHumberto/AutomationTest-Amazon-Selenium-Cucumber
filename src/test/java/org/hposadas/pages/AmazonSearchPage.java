@@ -1,6 +1,4 @@
-package pages;
-
-import org.openqa.selenium.WebDriver;
+package org.hposadas.pages;
 
 public class AmazonSearchPage extends BasePage{
 
@@ -9,9 +7,13 @@ public class AmazonSearchPage extends BasePage{
     private String acceptCookiesButton = "//*[@id=\"sp-cc-accept\"]";
     private String searchInput = "//input[@id='twotabsearchtextbox']";
     private String searchButton = "//input[@id='nav-search-submit-button']";
-    private String thirdItem = "/html[1]/body[1]/div[1]/div[1]/span[1]/div[1]/div[6]/div[1]/div[1]/div[1]";
+    private String thirdItem = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/div[1]/div[6]/div[1]/div[1]/div[1]";
     private String addToCartButton ="//input[@id='add-to-cart-button']";
-    private String addedMessageText = "//span[contains(text(),'Ajouté au panier')]";
+    private String nextPageButton = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/div[1]/div[58]/div[1]/div[1]/span[1]/a[3]";
+
+    private String noWarrantyButton = "#warranty_no_button-announce";
+    private String addedMessageText = "//*[contains(text(),'Ajouté au panier')]";
+    private String container = "//body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]/div[1]";
 
     //constructor
     public AmazonSearchPage() {
@@ -40,8 +42,16 @@ public class AmazonSearchPage extends BasePage{
         clickElement(thirdItem);
     }
 
+    public void pickThirdItemFromList() {
+        selectNthElementFromList(container, 3);
+    }
+
     public void addToCart() {
         clickElement(addToCartButton);
+    }
+
+    public void noWarranty() {
+        clickElement(noWarrantyButton);
     }
 
     public String addedToCartMessage() {
